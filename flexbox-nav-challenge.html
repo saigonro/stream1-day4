@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		nav {
+			font-family: roboto;
+			background-color: #eee;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+				
+		a {
+			text-decoration: none;
+			color: black;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding: 20px;
+			text-align: center;
+			font-size: 2em;
+			border:1px solid black;
+		}
+		#logoNav {
+			font-size: 2rem;
+			font-weight: bold;
+			}
+		.cards {
+			
+		}
+		.card {
+			
+		}
+		.cards h2 {
+			
+		}
+		.card img {
+
+			width: 100%;
+
+		}
+		.card p {
+			font-family: dosis, sans-serif;
+			font-size: 1.1rem;
+		}
+		@media screen and (min-width: 700px) {
+			nav {
+				flex-direction: row;
+				align-items: baseline;
+			}
+			a {
+				border: none;
+			}
+			#logoNav {
+				flex-grow: 6;
+				text-align: left;
+				font-size: 3rem;
+				font-weight: bold;
+			}
+		}
+
+		</style>
+</head>
+<body>
+	<nav>
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+	</nav>
+	<div class="cards">
+		<div class="card">
+			<img src="images/laptop.png">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career, then why not join one of our open evenings.</p>
+		</div>
+	</div>
+</body>
+</html>
